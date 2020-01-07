@@ -1,4 +1,4 @@
-package webclientresttemplatecomparison.gateway;
+package webclientresttemplatecomparison.api.gateway;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -6,7 +6,7 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class RestTemplateGateway {
 
-    private String teaServiceUrl = "http://localhost:8080/tea";
+    private String teaServiceUrl = "http://localhost:8081/tea";
     private RestTemplate restTemplate = new RestTemplate();
 
     public String getMug() {

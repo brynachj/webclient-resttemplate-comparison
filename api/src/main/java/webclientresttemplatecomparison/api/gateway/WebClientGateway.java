@@ -1,4 +1,4 @@
-package webclientresttemplatecomparison.gateway;
+package webclientresttemplatecomparison.api.gateway;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -7,7 +7,7 @@ import reactor.core.publisher.Mono;
 @Service
 public class WebClientGateway {
 
-    private String teaServiceUrl = "http://localhost:8080/tea";
+    private String teaServiceUrl = "http://localhost:8081/tea";
     private WebClient webClient = WebClient.create(teaServiceUrl);
 
     public Mono<String> getMug() {
