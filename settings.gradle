@@ -1,1 +1,3 @@
 rootProject.name = 'webclient-resttemplate-comparison'
+include 'api'
+
