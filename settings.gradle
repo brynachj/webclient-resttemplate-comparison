@@ -1,4 +1,5 @@
 rootProject.name = 'webclient-resttemplate-comparison'
 include 'api'
 include 'tea-service'
+include 'acceptance-tests'
 
