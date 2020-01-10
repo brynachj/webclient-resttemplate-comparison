@@ -9,6 +9,10 @@ Run the two services by executing the following commands in separate terminals:
 
 
 ### Running Gatling Tests
-cd into the gatlingtests folder and run the following command:
+cd into the gatlingtests folder and run the following command for testing the restTemplate:
 
-`./mvnw clean gatling:test -Dgatling.simulationCalss=com.brynachj.performancetests.api.ActuatorSimulation`
+`./mvnw clean gatling:test -Dgatling.simulationClass=com.brynachj.gatlingtests.api.ActuatorSimulation`
+
+or for webClient:
+
+`./mvnw clean gatling:test -Dgatling.simulationClass=com.brynachj.gatlingtests.api.ActuatorSimulation -DCLIENT=webClient`
