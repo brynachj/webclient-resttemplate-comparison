@@ -15,28 +15,28 @@ public class TeaController {
     @GetMapping("/mug")
     public String getMug() throws InterruptedException {
         logger.info("fetching a mug");
-        Thread.sleep(1000);
+        Thread.sleep(250);
         return "got a mug";
     }
 
     @GetMapping("/teabag")
     public String getTeabag() throws InterruptedException {
         logger.info("fetching a teabag");
-        Thread.sleep(1000);
+        Thread.sleep(250);
         return "got a teabag";
     }
 
     @GetMapping("/milk")
     public String getMilk() throws InterruptedException {
         logger.info("fetching milk");
-        Thread.sleep(1000);
+        Thread.sleep(250);
         return "got milk";
     }
 
     @GetMapping("/hot-water")
     public String getHotWater() throws InterruptedException {
         logger.info("fetching hot-water");
-        Thread.sleep(1000);
+        Thread.sleep(250);
         return "got hot water";
     }
 }

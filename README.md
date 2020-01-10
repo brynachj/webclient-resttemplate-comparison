@@ -11,4 +11,4 @@ Run the two services by executing the following commands in separate terminals:
 ### Running Gatling Tests
 cd into the gatlingtests folder and run the following command:
 
-`./mvnw clean gatling:test -Dgatling.simulationCalss=com.brynachj.performancetests.basic.ActuatorSimulation`
+`./mvnw clean gatling:test -Dgatling.simulationCalss=com.brynachj.performancetests.api.ActuatorSimulation`
